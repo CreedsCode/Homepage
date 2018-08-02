@@ -7,20 +7,14 @@ class App extends Component {
   render() {
     return (
       <Layout fixedHeader fixedDrawer>
-        <Header className="header-color" title="Title">
+        <Header className="header-color" title="CreedsCode" />
+        <Drawer title="Menu">
           <Navigation>
+            <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/aboutme">About Me</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
-          </Navigation>
-        </Header>
-        <Drawer title="Title">
-          <Navigation>
-            <Link to="/">Link</Link>
-            <Link to="/">Link</Link>
-            <Link to="/">Link</Link>
-            <Link to="/">Link</Link>
           </Navigation>
         </Drawer>
         <Content>

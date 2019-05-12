@@ -32,6 +32,17 @@
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="src\App.vue" />
+    <Content Include="src\assets\img\background.jpg" />
+    <Content Include="src\assets\img\portrait.jpg" />
+    <Content Include="src\assets\img\portrait_small.jpg" />
+    <Content Include="src\assets\img\projects\background.jpg" />
+    <Content Include="src\assets\img\projects\portrait.jpg" />
+    <Content Include="src\assets\img\projects\portrait_small.jpg" />
+    <Content Include="src\assets\img\projects\project1.jpg" />
+    <Content Include="src\assets\img\projects\project2.jpg" />
+    <Content Include="src\assets\img\projects\project3.jpg" />
+    <Content Include="src\assets\img\projects\project4.jpg" />
+    <Content Include="src\assets\img\projects\project5.jpg" />
     <Content Include="src\components\About.vue">
       <SubType>Code</SubType>
     </Content>
@@ -47,12 +58,18 @@
     <Folder Include="public\" />
     <Folder Include="src\" />
     <Folder Include="src\assets\" />
+    <Folder Include="src\assets\img\" />
+    <Folder Include="src\assets\img\projects\" />
     <Folder Include="src\components\" />
+    <Folder Include="src\router\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="babel.config.js" />
     <Compile Include="public\js\main.js" />
     <Compile Include="src\main.js" />
+    <Compile Include="src\router\index.js">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

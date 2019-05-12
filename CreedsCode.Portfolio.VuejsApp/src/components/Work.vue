@@ -13,22 +13,22 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item ">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a href="about.html" class="nav-link">
-                        About Me
-                    </a>
-                </li>
                 <li class="nav-item current">
-                    <a href="work.html" class="nav-link">
-                        My Work
+                    <a href="" class="nav-link">
+                        <router-link to="/home">Home</router-link>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <router-link to="/about">About Me</router-link>
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <router-link to="/work">Work</router-link>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>

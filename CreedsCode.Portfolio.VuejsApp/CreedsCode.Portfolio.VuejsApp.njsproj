@@ -43,6 +43,10 @@
     <Content Include="src\assets\img\projects\project3.jpg" />
     <Content Include="src\assets\img\projects\project4.jpg" />
     <Content Include="src\assets\img\projects\project5.jpg" />
+    <Content Include="src\assets\scss\main.scss" />
+    <Content Include="src\assets\scss\_config.scss" />
+    <Content Include="src\assets\scss\_menu.scss" />
+    <Content Include="src\assets\scss\_mobile.scss" />
     <Content Include="src\components\About.vue">
       <SubType>Code</SubType>
     </Content>
@@ -56,10 +60,12 @@
   <ItemGroup>
     <Folder Include="dist\" />
     <Folder Include="public\" />
+    <Folder Include="public\css\" />
     <Folder Include="src\" />
     <Folder Include="src\assets\" />
     <Folder Include="src\assets\img\" />
     <Folder Include="src\assets\img\projects\" />
+    <Folder Include="src\assets\scss\" />
     <Folder Include="src\components\" />
     <Folder Include="src\router\" />
   </ItemGroup>
@@ -68,6 +74,9 @@
     <Compile Include="public\js\main.js" />
     <Compile Include="src\main.js" />
     <Compile Include="src\router\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webpack.config.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

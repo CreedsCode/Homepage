@@ -10,5 +10,5 @@
     };
 </script>
 
-<style>
-</style>
+<style lang="scss" src="@/assets/scss/main.scss"></style>
+

@@ -1,37 +1,5 @@
 ﻿<template>
     <div>
-
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item current">
-                    <a href="" class="nav-link">
-                        <router-link to="/home">Home</router-link>
-                    </a>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">
-                        <router-link to="/about">About Me</router-link>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">
-                        <router-link to="/work">Work</router-link>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main id="about">
         <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
         <h2 class="sm-heading">Check out some of my projects...</h2>

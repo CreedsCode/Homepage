@@ -53,6 +53,9 @@
     <Content Include="src\components\Home.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\Menu.vue">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\components\Work.vue">
       <SubType>Code</SubType>
     </Content>
@@ -61,6 +64,7 @@
     <Folder Include="dist\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
+    <Folder Include="public\js\" />
     <Folder Include="src\" />
     <Folder Include="src\assets\" />
     <Folder Include="src\assets\img\" />

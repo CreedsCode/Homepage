@@ -1,12 +1,10 @@
 ﻿<template>
-    <div>
-    <main id="about">
-        <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
-        <h2 class="sm-heading">Check out some of my projects...</h2>
+    <main>
+        <PageHeading />
         <div class="projects">
             <div class="item">
                 <a href="#!">
-                    <img src="img/projects/project1.jpg" alt="Project">
+                    <img src="@/assets/img/projects/project1.jpg" alt="Project">
                 </a>
                 <a class="btn-light" href="https://www.dropbox.com/s/p67hzewpsru4a38/HighScoreRUNN%20v0.1.4.zip?dl=0">
                     <i class="fas fa-download"></i> Project
@@ -18,7 +16,7 @@
 
             <div class="item">
                 <a href="#!">
-                    <img src="img/projects/project2.jpg" alt="Project">
+                    <img src="@/assets/img/projects/project2.jpg" alt="Project">
                 </a>
                 <a class="btn-light" href="https://top10crypto.creedscode.cc">
                     <i class="fas fa-eye"></i> Project
@@ -30,17 +28,19 @@
 
         </div>
     </main>
-    </div>
 </template>
 
 <script>
+    import PageHeading from './PageHeading';
+
     export default {
-        name: 'Work',
-        props: {
-            msg: String
-        }
+        name: 'Projects',
+        components: {
+            PageHeading
+        },
+        data() {
+            return {
+            }
+        },
     };
 </script>
-
-<style scoped>
-</style>

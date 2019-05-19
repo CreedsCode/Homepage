@@ -1,10 +1,9 @@
 ﻿<template>
     <div>
     <main id="about">
-        <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-        <h2 class="sm-heading">Let me tell you a few things...</h2>
+		<PageHeading/>
         <div class="about-info">
-            <img src="img/portrait.jpg" alt="Logo" class="bio-image">
+            <img src="@/assets/img/portrait.jpg" alt="Logo" class="bio-image">
             <div class="bio">
                 <h3 class="text-secondary">BIO</h3>
                 <p>Hey, I am Dercio. I am 15 years old, from Germany and I have a lot of fun in programming. I try to realize
@@ -18,11 +17,18 @@
 </template>
 
 <script>
+    import PageHeading from './PageHeading';
+
     export default {
         name: 'About',
-        props: {
-            msg: String
-        }
+        components: {
+            PageHeading
+        },
+        data() {
+            return {
+            
+            }
+        },
     };
 </script>
 

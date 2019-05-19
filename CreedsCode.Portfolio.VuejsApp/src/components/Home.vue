@@ -1,21 +1,27 @@
 <template>
         <main id="home">
-            <h1 class="lg-heading">Creeds <span class="text-secondary">Code</span></h1>
-            <h2 class="sm-heading">Hobby Programmer.</h2>
+			<PageHeading  :heading=this.HeadingData.heading :secondary=this.HeadingData.secondary :caption=this.HeadingData.caption />
             <SocialIcons :listItems=this.listItems />
         </main>
 </template>
 
 <script>
-    import SocialIcons from './SocialIcons';
+	import SocialIcons from './SocialIcons';
+    import PageHeading from './PageHeading';	
 
     export default {
         name: 'Home',
             components: {
-             SocialIcons
+			 SocialIcons,
+			 PageHeading
             },
         data() {
             return {
+				HeadingData:{
+					heading: "Creeds",
+					secondary: "Code",
+					caption:"Hobby Programmer"
+				},
 				listItems: [
 					{
 						name:"Twitter",

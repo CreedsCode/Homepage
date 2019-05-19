@@ -30,8 +30,8 @@
                     routerRoutes: { name: "About" }
                 },
                 {
-                    name: "Work",
-                    routerRoutes: { name: "Work" }
+                    name: "Projects",
+                    routerRoutes: { name: "Projects" }
                 }]
             }
         }

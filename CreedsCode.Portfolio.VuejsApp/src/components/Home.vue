@@ -1,11 +1,9 @@
 <template>
-    <div>
         <main id="home">
             <h1 class="lg-heading">Creeds <span class="text-secondary">Code</span></h1>
             <h2 class="sm-heading">Hobby Programmer.</h2>
-            <SocialIcons/>
+            <SocialIcons  />
         </main>
-    </div>
 </template>
 
 <script>

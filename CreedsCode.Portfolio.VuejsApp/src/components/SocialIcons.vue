@@ -1,9 +1,7 @@
-<template>
-	<div>
-		<div v-for="(item,index) in testlistItems" :key="index" class="icons">
-				<a :id="item.url"><i :class="item.faIcon"></i></a>
-		</div>
-	</div>
+<template >
+    <div class="icons">
+        <div id="iconHolder"/>
+    </div>
 </template>
 
 <script>
@@ -15,22 +13,22 @@
 					{
 						name:"Twitter",
 						url:"https://twitter.com/creedgamesoa",
-						faIcon:"fa-twitter fab fa-2x "
+						faIcon:"fa-twitter"
 					},
 					{
 						name:"GitHub",
 						url:"https://github.com/CreedsCode/",
-						faIcon:"fa-github fab fa-2x "
+						faIcon:"fa-github"
 					},
 					{
 						name:"Instagram",
 						url:"https://www.instagram.com/creedscode/",
-						faIcon:"fa-instagram fab fa-2x "
+						faIcon:"fa-instagram"
 					},
 					{
 						name:"Youtube",
 						url:"https://www.youtube.com/channel/UCnZh8MLnCOugySmVjay55dA",
-						faIcon:"fa-youtube fab fa-2x "
+						faIcon:"fa-youtube"
 					}
 				],
             };
@@ -42,9 +40,27 @@
                 required:false
 				
             }
+        },
+        mounted: function () {
+            this.testlistItems.forEach(item => {
+                this.addItem(item);
+            });
+        },
+        methods: {
+              addItem: function(item){
+                var div = document.getElementById("iconHolder");
+                var li = document.createElement("li");
+                li.classList = "fab fa-2x ";
+                li.classList += item.faIcon;
+                var a = document.createElement("a");
+                a.href = item.url;
+                a.appendChild(li)
+                div.appendChild(a);
+            }
         }
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
 </style>

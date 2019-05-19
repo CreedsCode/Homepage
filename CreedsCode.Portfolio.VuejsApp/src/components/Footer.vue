@@ -1,5 +1,5 @@
 ﻿<template>
-    <footer id="main-footer">Copyright &copy; {{this.currentYear}}</footer>
+    <footer id="main-footer">Made with ❤️. Feel free to contribute on github!<a href="https://github.com/CreedsCode/CreedsCode-Portfolio"><strong> *click* </strong></a> ~ {{this.currentYear}} </footer>
 </template>
 
 <script>

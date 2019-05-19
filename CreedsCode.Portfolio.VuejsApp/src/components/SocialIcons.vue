@@ -7,42 +7,14 @@
 <script>
     export default {
         name: "SocialIcons",
-        data() {
-            return {
-				testlistItems: [
-					{
-						name:"Twitter",
-						url:"https://twitter.com/creedgamesoa",
-						faIcon:"fa-twitter"
-					},
-					{
-						name:"GitHub",
-						url:"https://github.com/CreedsCode/",
-						faIcon:"fa-github"
-					},
-					{
-						name:"Instagram",
-						url:"https://www.instagram.com/creedscode/",
-						faIcon:"fa-instagram"
-					},
-					{
-						name:"Youtube",
-						url:"https://www.youtube.com/channel/UCnZh8MLnCOugySmVjay55dA",
-						faIcon:"fa-youtube"
-					}
-				],
-            };
-        },
         props: {
             listItems: {
                 type:  Array,
-				// required:true
-                required:false
-				
+				required:true
             }
         },
         mounted: function () {
-            this.testlistItems.forEach(item => {
+            this.listItems.forEach(item => {
                 this.addItem(item);
             });
         },
@@ -62,5 +34,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>

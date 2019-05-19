@@ -69,7 +69,7 @@
                     this.menu.classList.remove("show");
                     this.menuNav.classList.remove("show");
                     this.menuBranding.classList.remove("show");
-                    this.vnavItems.forEach(item => item.classList.remove("show"));
+                    this.navItems.forEach(item => item.classList.remove("show"));
                 })
             },
             toggleMenu() {

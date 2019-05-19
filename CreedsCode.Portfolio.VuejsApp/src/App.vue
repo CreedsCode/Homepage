@@ -26,10 +26,6 @@
                     routerRoutes: { name: "Home" }
                 },
                 {
-                    name: "About",
-                    routerRoutes: { name: "About" }
-                },
-                {
                     name: "Projects",
                     routerRoutes: { name: "Projects" }
                 }]

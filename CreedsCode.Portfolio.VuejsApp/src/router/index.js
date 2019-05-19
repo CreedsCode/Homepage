@@ -2,7 +2,6 @@
 import Router from 'vue-router'
 
 import Home from "@/components/Home";
-import About from "@/components/About";
 import Projects from "@/components/Projects";
 
 Vue.use(Router);
@@ -14,11 +13,6 @@ export default new Router({
             alias:"/home",
             name: "Home",
             component: Home
-        },
-        {
-            path: "/about",
-            name: "About",
-            component: About
         },
         {
             path: "/projects",

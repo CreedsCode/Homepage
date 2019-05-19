@@ -32,11 +32,13 @@
 
 <script>
     import PageHeading from './PageHeading';
+    import ProjectItem from "./ProjectItem";
 
     export default {
         name: 'Projects',
         components: {
-            PageHeading
+            PageHeading,
+            ProjectItem
         },
         data() {
             return {

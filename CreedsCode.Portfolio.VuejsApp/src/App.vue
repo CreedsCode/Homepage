@@ -2,7 +2,7 @@
     <div id="app">
         <Menu v-bind:listItems="listItems" />
         <router-view></router-view>
-        <Footer/>
+        <Footer :hiddenOn=this.footerBlocketRoutes />
     </div>
 </template>
 
@@ -18,6 +18,9 @@
         },
         data() {
             return {
+                footerBlocketRoutes:[
+                    {name: "Home",}
+                ],
                 listItems:[{
                     name: "Home",
                     routerRoutes: { name: "Home" }
@@ -28,7 +31,7 @@
                 },
                 {
                     name: "Work",
-                    routerRoutes: { path: "work" }
+                    routerRoutes: { name: "Work" }
                 }]
             }
         }

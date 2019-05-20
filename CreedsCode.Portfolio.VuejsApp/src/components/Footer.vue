@@ -33,10 +33,10 @@
             this.getHidden(this.routeName);
         },
         watch: {
-            $route (to, from){
+            $route (to){
                 this.getHidden(to.name);
             },
-            isHidden (to,from){
+            isHidden (to){
                 document.getElementById("main-footer").hidden = to;
             }
         }

@@ -12,8 +12,8 @@
     export default {
         name: 'Home',
             components: {
-			 SocialIcons,
-			 PageHeading
+				SocialIcons,
+				PageHeading
             },
         data() {
             return {

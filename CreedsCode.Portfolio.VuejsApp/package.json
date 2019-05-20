@@ -2,20 +2,21 @@
   "name": "creeds-code.portfolio.vuejs-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "rebuild": "npm rebuild node-sass",
-    "sass": "node-sass -w src/assets/scss -o public/css/ --recursive",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
   "description": "CreedsCode.Portfolio.VuejsApp",
   "author": {
     "name": ""
   },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "rebuild": "npm rebuild node-sass",
+    "sass": "node-sass -w src/assets/scss -o public/css/ --recursive"
+  },
   "dependencies": {
     "vue": "2.5.17",
-    "vue-router": "^3.0.6"
+    "vue-router": "^3.0.6",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",

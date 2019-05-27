@@ -42,6 +42,11 @@
 						name:"Youtube",
 						url:"https://www.youtube.com/channel/UCnZh8MLnCOugySmVjay55dA",
 						faIcon:"fa-youtube"
+					},
+					{
+						name:"Discord: CreedsCode#1386",
+						url:"#",
+						faIcon:"fa-discord"
 					}
 				],
             };

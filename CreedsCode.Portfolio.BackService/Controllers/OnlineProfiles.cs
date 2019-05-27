@@ -1,12 +1,29 @@
-$HEADER$using Microsoft.AspNetCore.Mvc;
-namespace $NAMESPACE$
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using CreedsCode.Portfolio.BackService.Data;
+using CreedsCode.Portfolio.BackService.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace CreedsCode.Portfolio.BackService.Controllers
 {
-  public class $CLASS$: Controller
-  {
-    // GET
-    public IActionResult Index()
+    [Route("api/[controller]")]
+    [ApiController]
+    public class OnlineProfiles : Controller
     {
-	  $END$return View();
+        private readonly ApiDataContext _context;
+
+        public OnlineProfiles(ApiDataContext context)
+        {
+            _context = context;
+        }
+
+        // GET
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<OnlineProfile>>> GetOnlineProfiles()
+        {
+            return await _context.OnlineProfiles.ToListAsync();
+        }
+
     }
-  }
 }
